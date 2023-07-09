@@ -1,0 +1,121 @@
+.ProjectHeading {
+
+  color: rgb(0, 0, 0);
+  font-size: 2.28rem;
+  font-weight: 600;
+  /* width: 22.55%; */
+  padding-top: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 2rem; */
+  /* padding-bottom: 0.8rem; */
+  position: relative;
+  bottom: 2rem;
+
+
+
+  background-image: url("../../Vectors/blob\ \(1\).svg") ;
+  background-position: center;
+  background-size: 10rem;
+  background-repeat: no-repeat;
+}
+
+#line {
+  width: 8.9%;
+  padding-top: 0.69rem;
+  border-bottom: 4.5px solid rgba(0, 0, 0, 0.824);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* background-color: #2196F3; */
+  padding-top: 2.5rem;
+  /* padding-left: 3rem; */
+  row-gap: 0.89rem;
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  /* font-size: 30px; */
+  /* text-align: center; */
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  color: black;
+}
+
+
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 0.5rem;
+  gap: 1.1rem;
+}
+
+.icon-container img {
+  width: 2rem;
+  height: 2rem;
+  /* margin: 0 10px; */
+  border-radius: 50%;
+}
+
+
+
+
+/* ************************************     CHAKRA UI ****************************** */
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1 2 1;
+    /* background-color: #2196F3; */
+    padding-top: 2.5rem;
+    padding-left: 0;
+    row-gap: 0.89rem;
+  }
+
+  .ProjectItem {
+    /* width:  auto;  */
+    /* height: auto */
+  }
+
+  .grid-item {
+    /* background-color: #aff3d77f; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    /* font-size: 30px; */
+    /* text-align: center; */
+  }
+
+
+  #projDesc {
+    font-size: 1rem !important;
+  }
+
+  #ProjImg {
+    width: 40%;
+  }
+
+  #ProjHeading {
+    font-size: 1.01rem;
+  }
+
+  #GitProjIcon {
+    bottom: 1rem;
+  }
+}

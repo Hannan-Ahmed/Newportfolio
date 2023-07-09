@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nandinagari&display=swap');
+
+.AboutContent {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+ 
+.AboutHeading {
+  color: rgba(29, 28, 28, 0.824);
+  font-size: 2.28rem;
+  font-weight: 600;
+  /* border-bottom: 4px solid rgba(29, 28, 28, 0.824); */
+  width:100% !important;
+  height: 7rem;
+  margin-bottom: 2rem;
+  padding-top: 1.8rem;
+
+  background-image: url("../../Vectors/blob.svg") ;
+  background-position: left;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+} 
+
+.FullAbout{
+  padding-bottom: 7rem;
+}
+
+.AboutText {
+  width: 50%;
+  color: #54b78e;
+  font-size: 1.24rem;
+  font-family: 'Noto Sans Nandinagari', sans-serif;
+  padding: 3rem;
+  line-height: 2.4rem;
+}
+
+.AboutSvg {
+  width: 50%;
+  padding-left: 2rem;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#Line1 {
+  animation: blink 1s infinite;
+}
+
+
+.button {
+  position: relative;
+  width: 175px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #26e1ac;
+  background-color: #15d8a4;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  top: 1rem;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  position: relative;
+  right: 0.6rem;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 44px;
+  background-color: #0d8d5a;
+  display: flex;
+  align-items: center;
+  margin-left: 1.3rem;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button:hover {
+  background: #17795E;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 158px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #146c54;
+}
+
+.button:active {
+  border: 1px solid #27a483;
+}
+
+@media (max-width: 768px) {
+  .AboutHeading {
+    width: 34.90%;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .AboutContent {
+
+    flex-direction: column;
+  }
+
+
+
+  .AboutText {
+    width: 100%;
+    padding: 0 0 0 1.6rem !important;
+  }
+
+  #aboutsvgg {
+    width: 380px;
+    height: 450px;
+    position: relative;
+    right: 2rem;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+
+
+  .AboutContent {
+
+    flex-direction: column;
+  }
+
+  .AboutText {
+    width: 100%;
+    color: #54b78e;
+    font-size: 1.24rem;
+    font-family: 'Noto Sans Nandinagari', sans-serif;
+    /* padding: 3rem; */
+    line-height: 2rem;
+  }
+
+
+}
