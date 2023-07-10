@@ -5,6 +5,7 @@ import {ReactComponent as HeadVectorSVG} from "../../Vectors/head_Vector.svg"
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Element } from 'react-scroll';
 
 function HeadContent() {
   useEffect(() => {
@@ -28,9 +29,10 @@ function HeadContent() {
   return (
     <>
 
+<Element name="head">
 
     <div >
-
+ 
 
       <div className="HeadContent" id='HeadContent'>
 
@@ -50,6 +52,7 @@ function HeadContent() {
             <div class="Head_btn" data-aos="fade-right"  data-aos-duration="900" data-aos-delay="300">
               <a class="buttonn" href="#faboutpage" title="Yes, turtles.">View Portfolio</a>
             </div>
+            
           </div>
 
 
@@ -62,14 +65,26 @@ function HeadContent() {
 
 
 
-
         </div>
 
-
+      
       </div>
 
 
+
+    
+
+
+
+
+
     </div>
+</Element>
+<div id='divideline' class="custom-shape-divider-bottom-1688979403">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                </svg>
+            </div>
     </>
   )
 }

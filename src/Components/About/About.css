@@ -43,7 +43,8 @@
 .AboutSvg {
   width: 50%;
   padding-left: 2rem;
-}
+
+margin-top: 2.5rem;}
 
 
 @keyframes blink {
@@ -139,6 +140,12 @@
     padding-bottom: 0.8rem;
   }
 
+  #divideline{
+z-index: -1;
+    top: 45% !important;
+    bottom: 0 !important;
+  }
+
   .AboutContent {
 
     flex-direction: column;
@@ -155,11 +162,38 @@
     width: 380px;
     height: 450px;
     position: relative;
-    right: 2rem;
+    right: 2.3rem;
   }
 
 
 }
+
+
+
+.custom-shape-divider-bottom-1688979403 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1688979403 svg {
+  position: relative;
+  display: block;
+  width: calc(168% + 1.3px);
+  height: 375px;
+  /* top: -2rem; */
+  z-index: -1;
+}
+
+.custom-shape-divider-bottom-1688979403 .shape-fill {
+  fill: rgb(32, 244, 166);
+  opacity: 0.4;
+}
+
+
 
 @media (max-width: 480px) {
 

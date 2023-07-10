@@ -41,6 +41,7 @@ import firebase from "../../Images/firebase.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Element } from 'react-scroll';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -109,6 +110,8 @@ function Skills() {
         setValue(newValue);
     };
     return (
+        <Element name="skills">
+
         <div className='FullSkills' id='FullSkills'>
 
             <div className="SkillsHeading" >
@@ -208,6 +211,8 @@ function Skills() {
 
 
         </div>
+        </Element>
+
     )
 }
 

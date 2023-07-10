@@ -9,6 +9,7 @@ import { animations } from 'react-animation'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Element, Link } from 'react-scroll';
 
 
 function Navbar() {
@@ -47,12 +48,12 @@ function Navbar() {
     } 
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', controlNavbar);
-    return () => {
-      window.removeEventListener('scroll', controlNavbar);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', controlNavbar);
+  //   return () => {
+  //     window.removeEventListener('scroll', controlNavbar);
+  //   };
+  // }, []);
 
 // **************************************************************************
 useEffect(() => {
@@ -71,34 +72,32 @@ useEffect(() => {
   return () => {
     window.removeEventListener('resize', handleWindowResize);
   };
-}, [show]);
-
-
+}, [setShow]);
 
 
   return (
     <>
       {/* ****************************************************************************************** */}
 
-
 {!show &&
       <div className="nav" style={style} >
         
         <ul>
           <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="100" ><a href="HeadContent">Home</a></li>
-          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="200" ><a href="faboutpage">About</a></li>
-          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="300" ><a href="FullProject">Projects</a></li>
-          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="400" ><a href="FullSkills">Skills</a></li>
-          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="500" ><a href="experienFull">Experience</a></li>
-          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="600" ><a href="FullEduo">Education</a></li>
-          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="700" ><a href="fulltestimonals">Testimonials</a></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="200" ><Link to="about" offset={-50} smooth={true} duration={1000}>About</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="300" ><Link to="project" offset={-50} smooth={true} duration={1000}>Projects</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="400" ><Link to="skills" offset={-50} smooth={true} duration={1000}>Skills</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="500" ><Link to="experience" offset={-50} smooth={true} duration={1000}>Experience</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="500" ><Link to="education" offset={-50} smooth={true} duration={1000}>Education</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="700" ><Link to="testimonials" offset={-50} smooth={true} duration={1000}>Testimonials</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="700" ><Link to="footer" offset={-50} smooth={true} duration={1000}>Contact</Link></li>
         </ul>
       </div>
 }
 
       {/* ****************************************************************************************** */}
       
-      {show &&
+      {/* {show && */}
       <>
       <input type="checkbox" id="active" checked={isChecked}
         onChange={handleCheckboxChange} />
@@ -107,26 +106,25 @@ useEffect(() => {
 
 
 
-      < label  for="active" class="menu-btn" >   {isChecked ? <BsXLg style={{ zIndex: '999', height: 30, width: 30,  animation: animations.fadeIn }} /> : <FaBars style={{ height: 23, width: 23, margin: '.62rem', animation: animations.fadeIn }} />}    </label>
+      < label  for="active" class="menu-btn" >   {isChecked ? <BsXLg style={{ zIndex: '999', height: 30, width: 30,  animation: animations.fadeIn }} /> : <FaBars style={{ height: 23, width: 23, margin: '.78rem', animation: animations.fadeIn }} />}    </label>
       
-      
+       
       <div class="wrapper"  >
         <ul >
      
 
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="100"><a href="HeadContent">Home</a></li>
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="200"><a href="faboutpage">About</a></li>
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300"><a href="FullProject">Projects</a></li>
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="400"><a href="FullSkills">Skills</a></li>
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="500"><a href="experienFull">Experience</a></li>
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="600"><a href="faboutpage">FullEduo</a></li>
-          <li data-aos="fade-up"  data-aos-duration="900" data-aos-delay="700"><a href="fulltestimonals">Testimonials</a></li>
-
-
+        <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="100" ><a href="HeadContent">Home</a></li>
+          <li  data-aos="fade-down"  data-aos-duration="900" data-aos-delay="200" ><Link to="about" offset={-50} smooth={true} duration={1000}>About</Link></li>
+          <li  data-aos="fade-down"  data-aos-duration="900" data-aos-delay="300" ><Link to="project" offset={-50} smooth={true} duration={1000}>Projects</Link></li>
+          <li  data-aos="fade-down"  data-aos-duration="900" data-aos-delay="400" ><Link to="skills" offset={-50} smooth={true} duration={1000}>Skills</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="500" ><Link to="experience" offset={-50} smooth={true} duration={1000}>Experience</Link></li>
+          <li  data-aos="fade-down"  data-aos-duration="900" data-aos-delay="520" ><Link to="education" offset={-50} smooth={true} duration={1000}>Education</Link></li>
+          <li data-aos="fade-down"  data-aos-duration="900" data-aos-delay="540" ><Link to="testimonials" offset={-50} smooth={true} duration={1000}>Testimonials</Link></li>
+          <li  data-aos="fade-down"  data-aos-duration="900" data-aos-delay="590" ><Link to="footer" offset={-50} smooth={true} duration={1000}>Contact</Link></li>
         </ul>
       </div>
       </>
-      }
+      {/* } */}
 
 
     </>

@@ -6,9 +6,12 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Place, Telegram } from '@mui/icons-material';
 import { FaPaperPlane, FaPlane } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 function Footer() {
     return (
         <>
+        <Element name="footer">
+
             <div class="custom-shape-divider-top-1688893466">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
@@ -69,6 +72,8 @@ function Footer() {
                 </div>
 
             </footer>
+        </Element>
+
         </>
     )
 }

@@ -5,6 +5,7 @@ import MediLogo from "../../Images/medisure.jpg"
 import Logo128 from "../../Images/128.jpg"
 import NeoDocto from "../../Images/neodocto.jpg"
 import Auubs from "../../Images/ubbs.jpg"
+import { Element } from 'react-scroll'
 function Experience() {
 
 
@@ -25,6 +26,7 @@ function Experience() {
 
 
   return (
+    <Element name="experience">
     <div className='experienFull' id='experienFull'>
       <div className="SkillsHeading">
                 <div data-aos="flip-right"  data-aos-duration="1000" data-aos-delay="100">Experiences</div>
@@ -98,6 +100,7 @@ function Experience() {
   </ul>
 </div>
     </div>
+    </Element>
   )
 }
 

@@ -18,7 +18,7 @@
 .headvector {
   position: relative;
   /* bottom: 2rem; */
-  top: -2.4rem;
+  top: -2.6rem;
 }
 
 #Window {
@@ -134,17 +134,20 @@ a.buttonn:hover {
   
 }
 .HeadContent{
-  padding-top: 1rem;
+  padding-top: 2rem;
 
 }
-
-
 
 
 /* ***********  MEDIAQUERY STARTS HERE  *************************==== */
 @media (max-width: 768px) {
 
 
+  .headvector {
+    position: relative;
+    /* bottom: 2rem; */
+    top: 3.6rem;
+  }
 
   
   .Head_bio {

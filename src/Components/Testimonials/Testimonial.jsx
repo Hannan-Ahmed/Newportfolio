@@ -1,7 +1,10 @@
 import React from 'react'
 import "./Testimonials.css"
+import { Element } from 'react-scroll'
 function Testimonial() {
     return (
+        <Element name="testimonials">
+
         <div id='fulltestimonals'>
 
             <div className="SkillsHeading" data-aos="flip-left"  data-aos-duration="1000" data-aos-delay="100">
@@ -41,6 +44,8 @@ function Testimonial() {
 
             </div>
         </div>
+        </Element>
+
     )
 }
 
